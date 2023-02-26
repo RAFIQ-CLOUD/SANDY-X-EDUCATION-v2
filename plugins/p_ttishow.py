@@ -38,7 +38,7 @@ async def save_group(bot, message):
             return
         buttons = [[
             InlineKeyboardButton('𝙷𝙾𝚆 𝚃𝙾 𝚄𝚂𝙴 𝙼𝙴', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('📢 UᎮDΛTΞS 📢', url='https://t.me/MROTTTamilOffl')
+            InlineKeyboardButton('📢 UᎮDΛTΞS 📢', url='https://t.me/+7dA0q8sXC9ZmOTU9')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -53,13 +53,11 @@ async def save_group(bot, message):
                         await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
-                temp.MELCOW['welcome'] = await message.reply_video(
-                video="https://telegra.ph/file/03691465baa774e46506d.mp4",                                               
-                                                 caption=f'<b>ʜᴇʏ, {u.mention} 👋🏻\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴏᴜʀ ɢʀᴏᴜᴘ {message.chat.title}\n\n You Can Find Any Movies and Series ! if you need any movie then then enter the movie name + years 👍\n\nEnter Only Movie Name like Thiz👇\n\nVikram ✅\nVikram 2022 ✅\nVikram Tamil Bruh ❌\n\nSeries Name Like Thiz👇\n\nThe Boys Season 1 ✅\n The Boys ❌\nThe Boys all season ❌</b>',
+                temp.MELCOW['welcome'] = await message.reply_photo(
+                photo="https://telegra.ph/file/eaa08abfad750feeb0930.jpg",                                               
+                                                 caption=f'<b>வண்ணகம், {u.mention} 👋🏻\nஎங்கள் குழுவிற்கு வரவேற்கிறோம் {message.chat.title}\n\n இந்த பாட் அல்லது குழு உங்கள் கல்வி நோக்கத்திற்காக உருவாக்கப்பட்டது. எனவே உங்கள் நண்பர்களுடன் பகிர்ந்து கொள்ளுங்கள் மற்றும் அறிவை அறிந்து கொள்ளுங்கள் 👍</b>',
 
-                                                 reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('🔥  ↭ Main Channel ↭  🔥', url='https://t.me/+1jYXoGgYKRJiYzBl') ],
-
-                                                                                      [ InlineKeyboardButton('🔥  ↭ Request Channel ↭  🔥', url='https://t.me/SCMoviesDiscussion') ]
+                                                 reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('🔥  ↭ SHARE US ↭  🔥', url='https://t.me/+wuyp2Cmz0AUwNjg1') ]
 
                                                                                     ] )
 
@@ -76,7 +74,7 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('🌐SUPPORT', url=f'https://t.me/MR_OTT_REQUEST')
+            InlineKeyboardButton('🌐SUPPORT', url=f'https://t.me/+wuyp2Cmz0AUwNjg1')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
@@ -115,7 +113,7 @@ async def disable_chat(bot, message):
     await message.reply('Chat Successfully Disabled')
     try:
         buttons = [[
-            InlineKeyboardButton('🌐SUPPORT', url=f'https://t.me/MR_OTT_REQUEST')
+            InlineKeyboardButton('🌐SUPPORT', url=f'https://t.me/+wuyp2Cmz0AUwNjg1')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
