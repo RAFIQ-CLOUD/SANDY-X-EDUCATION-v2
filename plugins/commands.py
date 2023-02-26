@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('⚡ CHANNEL ⚡', url='https://t.me/+1jYXoGgYKRJiYzBl')
+                InlineKeyboardButton('⚡ CHANNEL ⚡', url='https://t.me/+7dA0q8sXC9ZmOTU9')
             ],
             [
-                InlineKeyboardButton('⚡ DISCUSSION ⚡', url='https://t.me/SCMoviesDiscussion'),
+                InlineKeyboardButton('⚡ DISCUSSION ⚡', url='https://t.me/+wuyp2Cmz0AUwNjg1'),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -44,8 +44,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('⚚ ADD ME TO YOUR GROUPS ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚡ CHANNEL ⚡', url='https://t.me/+1jYXoGgYKRJiYzBl'),
-            InlineKeyboardButton('⚡ DISCUSSION ⚡', url='https://t.me/SCMoviesDiscussion')
+            InlineKeyboardButton('⚡ CHANNEL ⚡', url='https://t.me/+7dA0q8sXC9ZmOTU9'),
+            InlineKeyboardButton('⚡ DISCUSSION ⚡', url='https://t.me/+wuyp2Cmz0AUwNjg1')
             ],[
             InlineKeyboardButton('♻️ HELP ♻️', callback_data='help'),
             InlineKeyboardButton('♻️ ABOUT ♻️', callback_data='about')
@@ -90,8 +90,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('⚚ ADD ME TO YOUR GROUPS ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚡ CHANNEL ⚡', url='https://t.me/+1jYXoGgYKRJiYzBl'),
-            InlineKeyboardButton('⚡ DISCUSSION ⚡', url='https://t.me/SCMoviesDiscussion')
+            InlineKeyboardButton('⚡ CHANNEL ⚡', url='https://t.me/+7dA0q8sXC9ZmOTU9'),
+            InlineKeyboardButton('⚡ DISCUSSION ⚡', url='https://t.me/+wuyp2Cmz0AUwNjg1')
             ],[
             InlineKeyboardButton('♻️ HELP ♻️', callback_data='help'),
             InlineKeyboardButton('♻️ ABOUT ♻️', callback_data='about')
