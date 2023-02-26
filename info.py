@@ -14,40 +14,40 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '19721774'))
 API_HASH = environ.get('API_HASH', 'a97ece8467cfbc4bc77f31fa56d68a8e')
-BOT_TOKEN = environ.get('BOT_TOKEN', "5254859788:AAGtMtcVB8lCC5ObM85n1BjX1Tbf6z_b3ig")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6058794270:AAFpTjdRfhuMiq4YL2vmyUdCptLzPkV3HHg")
 
 #Port
 PORT = environ.get("PORT", "8080")
 
 # Bot settings
-CACHE_TIME = int(environ.get('CACHE_TIME', 300))
+CACHE_TIME = int(environ.get('CACHE_TIME', 400))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/8397872dc44aed5b4b484.jpg')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/eaa08abfad750feeb0930.jpg')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5477885906 5784009732').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001314162415').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001885909747').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5477885906 5784009732').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL', '-1001605505945')
+auth_channel = environ.get('AUTH_CHANNEL', '')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://sandyxfilterbot:sandyxfilterbot@cluster0.00ghgb4.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://mrsandyxeducation:mrsandyxeducation@cluster0.xnutwac.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001733323769'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001859876854'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'MR_OTT_REQUEST')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>🗂FileName : <code>{file_name}</code> \n\n🏷FileSize : <code>{file_size}</code>\n\nKindly join our channel and group😉\n\n♻️ Main Channel - [SCExploremovies](https://t.me/+1jYXoGgYKRJiYzBl)\n\n♻️ Discussion group - @SCMoviesDiscussion\n\n🔺Admin🔻 - @This_is_SandyBS</b>")
-BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "<b>🗂FileName : <code>{file_name}</code> \n\n🏷FileSize : <code>{file_size}</code>\n\nKindly join our channel and group😉\n\n♻️ Main Channel - [SCExploremovies](https://t.me/+1jYXoGgYKRJiYzBl)\n\n♻️ Discussion group - @SCMoviesDiscussion\n\n🔺Admin🔻 - @This_is_SandyBS</b>")
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>🗂 Title : {title} \n🎭 Genre : {genres} \n📆 Year : {year} \n🌟 Rating : {rating}\n\n📥 Uploaded By : @SCMoviesdiscussion</b>")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>🗂FileName : <code>{file_name}</code> \n\n🏷FileSize : <code>{file_size}</code>\n\nWithOut Education There Is No Future</b>")
+BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "<b>🗂FileName : <code>{file_name}</code> \n\n🏷FileSize : <code>{file_size}</code>\n\nWithOut Education There Is No Future</b>")
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>🗂 Title : {title} \n🎭 Genre : {genres} \n📆 Year : {year} \n🌟 Rating : {rating}\n\n📥 Uploaded By : @@Educatepurposebot</b>")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
@@ -76,11 +76,11 @@ if SELF_DELETE == "True":
     SELF_DELETE = True
 
     # Download Tutorial Button #
-DOWNLOAD_TEXT_NAME = "📥 HOW TO DOWNLOAD 📥"
-DOWNLOAD_TEXT_URL = "https://t.me/MROTTTamilLinks/10"
+DOWNLOAD_TEXT_NAME = ""
+DOWNLOAD_TEXT_URL = ""
 
    # Custom Caption Under Button #
-CAPTION_BUTTON = "❤️‍JOIN❤️‍"
-CAPTION_BUTTON_URL = "https://t.me/+1jYXoGgYKRJiYzBl"
+CAPTION_BUTTON = "❤️‍SHARE US❤️‍"
+CAPTION_BUTTON_URL = "https://t.me/+wuyp2Cmz0AUwNjg1"
 
    # Auto Delete For Bot Sending Files #
